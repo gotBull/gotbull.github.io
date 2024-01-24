@@ -1,0 +1,17 @@
+.total{
+    display: flex;
+    flex-direction: column;
+}
+.glassgroup{
+    display: flex;
+    flex-direction: row;
+}
+.glass{
+    flex: 0 0 auto;
+    width: 20%;
+    height: 33%;
+    box-shadow: 0 0 10px 15px #000,
+                0 0 20px 30px #75747a,
+                0 0 30px 50px #99a3aa,
+                0 0 40px 75px #d1e1f0;
+}
