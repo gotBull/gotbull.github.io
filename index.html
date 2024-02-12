@@ -3,35 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <title>黃國祐的網站</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+$(document).ready(function(){
+    $(".resume,.Eresume").accordion();
+  });
+    </script>
+    <link rel="stylesheet" href="MyResume.css">
 </head>
 <body>
-    <div class="total">
-        <div class="glassgroup">
-            <div class="glass">1</div>
-            <div class="glass">2</div>
-            <div class="glass">3</div>
-            <div class="glass">4</div>
-            <div class="glass">5</div>
-        </div>
-        <div class="glassgroup">
-            <div class="glass">6</div>
-            <div class="glass">7</div>
-            <div class="glass">8</div>
-            <div class="glass">9</div>
-            <div class="glass">10</div>
-        </div>
-        <div class="glassgroup">
-            <div class="glass">11</div>
-            <div class="glass">12</div>
-            <div class="glass">13</div>
-            <div class="glass">14</div>
-            <div class="glass">15</div>
-        </div>
+    <div class="background">
+        <img class="BG1" id="bg1" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg2" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg3" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg4" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg5" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg6" src="/img/background2.webp" alt="background">
+        <img class="BG1" id="bg7" src="/img/background2.webp" alt="background">
     </div>
+    <div class="arrang">
+        <nav  class="col-left">
+            <div class="margin-L">
+                <div class="listResume">
+                    <a href="#resume"><h3>履歷</h3></a>
+                    <a href="#resume-1"><p>三管輪</p></a>
+                    <a href="#resume-2"><p>資深輪習生</p></a>
+                    <a href="#resume-3"><p>輪習生</p></a>
+                    <a href="#resume-4"><p>助教</p></a>
+                    <a href="#resume-5"><p>副樓長</p></a>
+                    <a href="#resume-6"><p>廚房助手</p></a>
+                    <a href="#resume-7"><p>學務處工讀生</p></a>
+                    <a href="#resume-8"><p>計時工讀生</p></a>
+                    <a href="#resume-9"><p>修車廠工讀生</p></a>
+                </div>
+                <div class="listEResume">
+                    <a href="#Eresume"><h3>Résumé</h3></a>
+                    <a href="#Eresume-1"><p>Forth engineer</p></a>
+                    <a href="#Eresume-2"><p>Senior intern</p></a>
+                    <a href="#Eresume-3"><p>Junior intern</p></a>
+                    <a href="#Eresume-4"><p>Teach assist</p></a>
+                    <a href="#Eresume-5"><p>Deputy dormitory floor manager</p></a>
+                    <a href="#Eresume-6"><p>Bento shop kitchen assist</p></a>
+                    <a href="#Eresume-7"><p>Academic affairs office work-study</p></a>
+                    <a href="#Eresume-8"><p>Bento shop part time</p></a>
+                    <a href="#Eresume-9"><p>Part time intern</p></a>
+                </div>
+
+                <div class="listAuto">
+                    <a href="#Autograph"><h3>自傳</h3></a>
+                    <a href="#Autograph-1"><p>家庭狀況與職涯轉變</p></a>
+                    <a href="#Autograph-2"><p>過往的工作</p></a>
+                    <a href="#Autograph-3"><p>持續學習</p></a>
+                    <a href="#Autograph-4"><p>未來展望與職涯目標</p></a>
+                </div>
+                <div class="listEAuto">
+                    <a href="#EAutograph"><h3>Autobiography</h3></a>
+                    <a href="#EAutograph-1"><p>Family and Career Transition</p></a>
+                    <a href="#EAutograph-2"><p>Previous Work Experience</p></a>
+                    <a href="#EAutograph-3"><p>Continuous Learning</p></a>
+                    <a href="#EAutograph-4"><p>Future Prospects and Career Goals</p></a>
+                </div>
+            </div>
+        </nav>
     
+        <main  class="col-mid">
+<!-- 中英切換按鈕 -->
+            <button type="button" id="engbtn" class="langbtn">English</button> 
+<!-- 中文履歷 -->
+            <h1 id="resume">黃國祐的履歷</h1>
+            <p id="school">高雄科技大學輪機工程系</p>
+            <div class="resume">
+                
+                <h2 id="resume-1">三管輪, 萬海航運股份有限公司</h2>
+                <div>
+                    <div>
+                        <p>MAY 2022 - JUNE 2023</p>
+                    </div>
+                    <ul>
+                        <li>所管設備定期保養、維修、檢查</li>
+                        <li>靠港加油、廢油卸岸、管路操作、協助主機大保養</li>
+                        <li>化學品、油料、閥、軸承、皮帶、所管設備的備件盤點、管理、定期申購</li>
+                        <li>進出港備車、航行輪流當班、警報處理、輪流當伙委</li>
+                        <li>每月每周每日的各種報表</li>
+                    </ul>
+                </div>
+                <h2 id="resume-2">資深輪習生, 萬海航運股份有限公司</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2021 - JAN 2022</p>
+                    </div>
+                    <ul>
+                        <li>協助三管設備維修、保養、檢查、協助主機大保養</li>
+                        <li>協助三管管路與閥操作、靠港加油、廢油卸岸</li>
+                        <li>油帳計算、設備的報表協助填寫</li>
+                        <li>學習二管設備</li>
+                    </ul>
+                </div>
+                <h2 id="resume-3">輪習生, 萬海航運股份有限公司</h2>
+                <div>
+                    <div>
+                        
+                        <p>DEC 2020 - JUNE 2021</p>
+                    </div>
+                    <ul>
+                        <li>協助三管填寫報表、進出港準備工作</li>
+                        <li>協助三管日常油水駁運、濾器清洗</li>
+                        <li>學習三管設備</li>
+                    </ul>
+                </div>
+                <h2 id="resume-4">助教,高雄科技大學-輪機實務與安全課程</h2>
+                <div>
+                    <div>
+                        
+                        <p>MAR2019 - JUNE 2019</p>
+                    </div>
+                    <ul>
+                        <li>協助老師開關投影機、收發考卷</li>
+                        <li>整理教室</li>
+                    </ul>
+                </div>
+                <h2 id="resume-5">副樓長, 高雄科技大學-渤海樓宿舍</h2>
+                <div>
+                    <div>
+                        
+                        <p>AUG 2017 - JULY 2018</p>
+                    </div>
+                    <ul>
+                        <li>督導學弟宿舍打掃、檢查打掃</li>
+                        <li>設備維修</li>
+                        <li>配合輔導員與教官安排相關活動</li>
+                    </ul>
+                </div>
+                <h2 id="resume-6">廚房助手, 嘉義雞肉飯/南門排骨酥麵</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2017 - JULY 2017</p>
+                    </div>
+                    <ul>
+                        <li>協助冰庫搬菜、洗菜、削皮、切塊</li>
+                        <li>煎蛋、煎菜圃蛋、煮紅茶、盛菜、端菜</li>
+                        <li>洗裝菜盤、洗碗、洗米、切放湯用的厚紙板</li>
+                    </ul>
+                </div>
+                <h2 id="resume-7">學務處工讀生, 高雄科技大學學務處</h2>
+                <div>
+                    <div>
+                        
+                        <p> MAR 2017 - JUNE 2017</p>
+                    </div>
+                    <ul>
+                        <li>登記停車場違停車輛、送發文件、Excel資料處理</li>
+                    </ul>
+                </div>
+                <h2 id="resume-8">計時工讀生, 初飽食堂</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2016 - Aug 2016</p>
+                    </div>
+                    <ul>
+                        <li>洗碗、端菜、燙青菜、點餐</li>
+                    </ul>
+                </div>
+                <h2 id="resume-9">工讀生, 大盛車廠</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2014 - Aug 2014</p>
+                    </div>
+                    <ul>
+                        <li>拆裝輪胎、清洗輪胎、輪胎打氣、協助拿工具、維修協助</li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+<!-- 英文履歷 -->
+            <div class="Eresume">
+                <h2 id="Eresume-1">Forth engineer, Wan Hai Lines, Ltd.</h2>
+                <div>
+                    <div>
+                        
+                        <p>MAY 2022 - JUNE 2023</p>
+                    </div>
+                    <ul>
+                        <li>Regular maintenance, repair and inspection of equipment under management</li>
+                        <li>Bunker, Sludge discharge, Piping and Valve operation, Assist main engine maintenance</li>
+                        <li>Chemical, Lub oil, Valve, Bearings, Belts and so on under my management store and spare regular check qty, apply, expiry date</li>
+                        <li>Standby during departure and arrival, shift during sailing, deal with alarm</li>
+                        <li>Monthly, weekly, daily report</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-2">Senior intern, Wan Hai Lines, Ltd.</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2021 - JAN 2022</p>
+                    </div>
+                    <ul>
+                        <li>Assist maintenance, repair and inspection of equipment under 4/E management, assist M/E maintenance</li>
+                        <li>Assist Bunker, Sludge discharge, valve operation</li>
+                        <li>Calculate oil consume, daily report</li>
+                        <li>Learning 3/E's equipment</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-3">Junior intern, Wan Hai Lines, Ltd.</h2>
+                <div>
+                    <div>
+                        
+                        <p>DEC 2020 - JUNE 2021</p>
+                    </div>
+                    <ul>
+                        <li>Preparation of departure and arrival</li>
+                        <li>Assist oil and water transfer, clean filter</li>
+                        <li>Learning 4/E's equipment</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-4">Teach assist ,NKUST-Marine engineering practice and safty</h2>
+                <div>
+                    <div>
+                        
+                        <p>MAR2019 - JUNE 2019</p>
+                    </div>
+                    <ul>
+                        <li>Assist the teacher to turn on and off the projector and send and receive examination papers</li>
+                        <li>Clean up the classroom</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-5">Deputy dormitory floor manager, NKUST-渤海dormitory</h2>
+                <div>
+                    <div>
+                        
+                        <p>AUG 2017 - JULY 2018</p>
+                    </div>
+                    <ul>
+                        <li>Supervise students to cleaning of the dormitory</li>
+                        <li>Equipment maintenance and repair</li>
+                        <li>Cooperate with counselors and Military instructors to arrange relevant activities</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-6">Bento shop kitchen assist, 嘉義Turkey rice/南門 crispy fried spareribs noodle</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2017 - JULY 2017</p>
+                    </div>
+                    <ul>
+                        <li>Assist in hauling, washing, peeling, and dicing Ingredients</li>
+                        <li>Fried eggs, dried radish omelette, cook black tea, serving dishes</li>
+                        <li>Washing dishes, washing rice, and cutting Bento usage paperboard</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-7">Academic affairs office work-study, NKUST-Academic affairs office</h2>
+                <div>
+                    <div>
+                        
+                        <p> MAR 2017 - JUNE 2017</p>
+                    </div>
+                    <ul>
+                        <li>Register illegally parked vehicles in parking lots, send documents, and process Excel data</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-8">Bento shop part time, 初飽canteen</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2016 - Aug 2016</p>
+                    </div>
+                    <ul>
+                        <li>Washing dishes, serving dishes, blanching vegetables, customer order service</li>
+                    </ul>
+                </div>
+                <h2 id="Eresume-9">Part-time intern, 大盛car maintenance shop</h2>
+                <div>
+                    <div>
+                        
+                        <p>JUNE 2014 - Aug 2014</p>
+                    </div>
+                    <ul>
+                        <li>Disassemble and install tires, clean tires, inflate tires, assist taking tools, and assist with maintenance</li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+ <!-- 中文自傳 -->   
+            <h1 id="Autograph">黃國祐的自傳</h1>        
+            <div class="Autograph">
+                <hr>
+                <h3 id="Autograph-1">家庭狀況與職涯轉變</h3>
+                <p>目前與父母同住, 爸是計程車司機, 媽是居家照服員。
+                    在快要三年的跑船工作後, 長期的高壓和高風險的工作環境, 還有作息常常要跟著船變換, 我的身體健康欠佳, 父母也不希望我長年在外工作, 見他們年事已高, 健康狀況也逐漸衰退, 決定回來陸地上工作。</p>
+
+                <h3 id="Autograph-2">過往的工作</h3>
+                <p>曾在汽車保養廠跟兩間便當店打過工, 操練了速度與耐力並學習了一些技能。在跑船的期間繞過一圈地球, 學習與其他國家的人團隊合作和完成各種大型保養, 和學習英文能力、倉儲管理, 適應高噪音高溫、日夜顛倒、高勞力、高壓等工作環境, 覺得這些經驗讓我受益良多, 也將成為我往後工作的動力。</p>
+
+                <h3 id="Autograph-3">持續學習</h3>
+                <p>在船上我自學了Excel, 整合了很多原本雜亂的工作項目, 讓任何再小的工作項目都可以被控管, 在船上持續閱讀了許多的說明書讓工作更加順利。下船後則是參加了職訓局舉辦的JAVA全端養成班, 學習了網頁設計的相關程式, 例如HTML、CSS、JS、Vue、jQuery、java和MariaDB、SQLite, 以及使用SpringBoot、Vscode、NetBeans、Docker等開發環境和Github、Azure等雲端技術, 並結合了我自學的Clip Studio Paint幫助我們這組完成專題報告。</p>
+
+                <h3 id="Autograph-4">未來展望與職涯目標</h3>
+                <p>我希望可以在未來的工作上實踐我的理想，以及貢獻我學到的一切，並且持續學習。
+                    對於未來工作的短期目標是熟悉公司的環境、大小規定和常規工作等，以及和同事打好關係，並完成上司交辦事項；中期目標是希望可以獨當一面的完成工作，並且與團隊能夠和諧溝通；長期目標是能夠帶領公司新進後輩、參與各種公司重大工作項目，並長期在公司深耕，提升總體效率。</p>
+            </div>
+<!-- 英文自傳 -->
+            <div class="EAutograph">
+                <hr>
+                <h3 id="EAutograph-1">Family and Career Transition</h3>
+                <p>I live with my parents; my father is a taxi driver, and my mother is a heath care aide. After nearly three years of container ship onboard life, where the work environment was high pressure and high risk, coupled with irregular sleep patterns, my health out of condition. Considering my aging parents and their declining health, come back to take care of them also is what I desire.</p>
+
+                <h3 id="EAutograph-2">Previous Work Experience</h3>
+                <p>I have worked in an auto maintenance shop and two bento shops, honing my speed, endurance, and acquiring various skills. During the time onboard, get around the earth, I learned to collaborate with teams from different countries, party with some large-scale maintenance projects. I enhanced my English proficiency, learned store management, and adapted to high noise, high temperatures, non-routine shifts, high physical demands, and high pressure. These experiences have proven invaluable, providing a solid foundation for my future career.</p>
+
+                <h3 id="EAutograph-3">Continuous Learning</h3>
+                <p>While working onboard, I self-taught Excel to streamline diverse work tasks. I also extensively read manuals to enhance work efficiency. After that, I joined a JAVA full-service engineer course. I learned various web design-related programming languages, such as HTML, CSS, JS, Vue, jQuery, Java, and databases like MariaDB and SQLite. I also familiarized with development environments like SpringBoot, Vscode, NetBeans, Docker, and utilized cloud technologies such as Github and Azure. Additionally, I integrated my self-taught skills in Clip Studio Paint to assist our team in completing project reports.
+                </p>
+
+                <h3 id="EAutograph-4">Future Prospects and Career Goals</h3>
+                <p> I aspire to contribute all that I have learned in my future career. My short-term goals involve becoming familiar with working environment, regulations, and routine tasks, establishing good relationships with colleagues, and completing assigned tasks. In the medium term, I aim to independently handle responsibilities and communicate harmoniously within the team. Long-term goals include leading new colleagues, participating in major company projects, and establishing a lasting presence within the company to enhance overall efficiency.</p>
+            </div>
+        </main>
     
+        <section class="col-right">
+            <div class="margin-R">
+                <img src="img/2023new1.webp" alt="headshot" id="headshot">
+                <hr>
+                <div class="link">
+                    <a href="http://adaforever.eastasia.cloudapp.azure.com:8324/homepage">全端工程師養成班專題製作 2024/1</a><br>
+                    <a href="https://github.com/gotBull/Student-ID-card-design/blob/main/%E5%AD%B8%E7%94%9F%E8%AD%89%E8%83%8C%E9%9D%A24.png">大三時設計學生證 2018/11</a><br>
+                    <a href="https://docs.google.com/presentation/d/1Y0NTTphid_MGtE3rEEMhCnkfSHoZXVl4/edit?usp=drive_link&ouid=114317539539031280615&rtpof=true&sd=true">大二時的機構學手錶機構報告 2018/5</a><br>
+                    <a href="https://www.pixiv.net/artworks/100255763">pixiv塗鴉 2022/8</a><br>
+                </div>
+            </div>
+        </section>
+        <a type="btn" id="toTop" href="#resume">回到最上方</a>
+    </div>
 </body>
+<script src="MyResume.js"></script>
 </html>
